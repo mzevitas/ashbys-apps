@@ -1,6 +1,6 @@
 (function () {
 
-    angular.module('myApp', ['ngRoute', 'ngCookies'])
+    angular.module('AshbysApps', ['ngRoute', 'ngCookies'])
         .constant('PARSE_HEADERS', {
             headers: {
                 'X-Parse-Application-Id': 'IZ8NffJP8o20X4aDdTeFiTuGMpsHHmvjNeVxOLmv',
@@ -8,4 +8,16 @@
                 'Content-Type': 'application/json'
             }
         })
-        .constant('PARSE_URI', 'https://api.parse.com/1/')
+        .config( function ($routeProvider) {
+
+
+            $routeProvider.when('/', {
+                templateUrl: 'scripts/users/user-signup.html',
+                controller: 'UserController'
+            });
+
+
+
+
+
+        }());
