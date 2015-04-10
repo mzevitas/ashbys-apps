@@ -12,7 +12,7 @@
 
 
             $routeProvider.when('/', {
-                templateUrl: 'index.html',
+                templateUrl: 'home.html',
                 controller: 'PageCtrl'
             });
             $routeProvider.when('/about', {
