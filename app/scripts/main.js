@@ -12,12 +12,31 @@
 
 
             $routeProvider.when('/', {
-                templateUrl: 'scripts/users/user-signup.html',
-                controller: 'UserController'
+                templateUrl: 'index.html',
+                controller: 'PageCtrl'
+            });
+            $routeProvider.when('/about', {
+                templateUrl: 'views/about.html',
+                controller: 'PageCtrl'
+            });
+            $routeProvider.when('/portfolio', {
+                templateUrl: 'views/portfolio.html',
+                controller: 'PageCtrl'
+            });
+            $routeProvider.when('/blog', {
+                templateUrl: 'views/blog.html',
+                controller: 'PageCtrl'
+            });
+            $routeProvider.when('/contact', {
+                templateUrl: 'views/contact.html',
+                controller: 'PageCtrl'
             });
 
 
+        });
 
+    angular.controller('PageCtrl', function () {
+        console.log("Page Controller reporting for duty.");
+    });
 
-
-        }());
+}());
