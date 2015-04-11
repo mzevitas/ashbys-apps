@@ -1,23 +1,28 @@
  // Bourbon & Neat
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
-
+ @import "../../bower_components/foundation/scss/foundation/components/grid";
 // Custom Styles
 
  $header-color: hsla(349,55%,92%,1);
  $gold-font: hsla(34,61%,35%,1);
  $hover-blue: hsla(155,30%,80%,1);
  $bg-color:hsla(155,30%,80%,0.4);
+ $block-grid-media-queries: true;
 
 
  body{
    background-color: $bg-color;
+   font-family: 'Sail', cursive;
 
  }
 
  .container {
     clear: both;
    margin: 0 auto;
+   font-family: 'Sail', cursive;
+
+
  }
 
  //Header Styles
@@ -30,6 +35,7 @@
    .menu {
      margin-right: 4%;
      font-family: 'Sail', cursive;
+
    }
 
    span {
@@ -41,10 +47,16 @@
 
    a {
      color: $gold-font;
+     transition: 1s ease;
+
    }
 
    a:hover {
      color: $hover-blue;
+     webkit-transform: scale(1.4);
+     -ms-transform: scale(1.4);
+     transform: scale(1.4);
+     transition: 1s ease;
    }
 
    h1 {
@@ -52,17 +64,93 @@
      font-family: 'Sail', cursive;
      color: $gold-font;
      float: left;
+
    }
 
    h1:hover {
      color: $hover-blue;
 
+
    }
  }
+
+
+ //home
+
+.home {
+  margin: 0 auto;
+
+
+  h1{
+    text-align: center;
+    font-family: 'Sail', cursive;
+    color: $gold-font;
+
+  }
+  .skills{
+    height: 200px;
+    text-align: center;
+
+    .medium-4.columns.a{
+      height: auto;
+      border: solid black;
+    }
+    .medium-4.columns.b{
+      height: auto;
+      border: solid black;
+    }
+    .medium-4.columns.c{
+      height: auto;
+      border: solid black;
+    }
+  }
+}
 
 
  //footer styles
 
  footer{
+   height: 50px;
+   background-color: hsla(157,30%,73%,1);
+   text-align: center;
+   font-family: 'Sail', cursive;
+   padding: 9px;
 
- }
+
+   .contactinfo{
+     float: left;
+     margin-left: 21%;
+
+     p {
+       font-size: 1.2em;
+       color: $gold-font;
+
+     }
+
+     a {
+       color: $gold-font;
+       &:hover{
+         color: $header-color;
+       }
+     }
+
+
+   }
+
+   .socialimg {
+
+     img{
+       width: 2.2%;
+       transition: 1s ease;
+     }
+
+     img:hover {
+       webkit-transform: scale(1.2);
+       -ms-transform: scale(1.2);
+       transform: scale(1.2);
+       transition: 1s ease;
+     }
+
+     }
+   }
+
