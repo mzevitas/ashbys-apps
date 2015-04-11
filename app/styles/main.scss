@@ -85,23 +85,43 @@
     text-align: center;
     font-family: 'Sail', cursive;
     color: $gold-font;
-
+    font-size: 50px;
   }
+
+  .pearls1 {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .pearls2 {
+    width: 30px;
+  }
+
+
   .skills{
+
     height: 200px;
     text-align: center;
 
+
+
+    h2 {
+       font-family: 'Sail', cursive;
+       color: $gold-font;
+       font-weight: 700;
+
+     }
+
+
+
     .medium-4.columns.a{
       height: auto;
-      border: solid black;
+
     }
     .medium-4.columns.b{
       height: auto;
-      border: solid black;
     }
     .medium-4.columns.c{
       height: auto;
-      border: solid black;
     }
   }
 }
