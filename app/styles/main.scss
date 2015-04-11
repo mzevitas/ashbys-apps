@@ -3,3 +3,66 @@
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
 // Custom Styles
+
+ $header-color: hsla(349,55%,92%,1);
+ $gold-font: hsla(34,61%,35%,1);
+ $hover-blue: hsla(155,30%,80%,1);
+ $bg-color:hsla(155,30%,80%,0.4);
+
+
+ body{
+   background-color: $bg-color;
+
+ }
+
+ .container {
+    clear: both;
+   margin: 0 auto;
+ }
+
+ //Header Styles
+
+ header {
+   height: 80px;
+   background-color: $header-color;
+   border-bottom: 5px solid hsla(349, 55%, 92%, 0.4);
+
+   .menu {
+     margin-right: 4%;
+     font-family: 'Sail', cursive;
+   }
+
+   span {
+     float: right;
+     margin-top: 20px;
+     font-size: 1.4em;
+     margin-left: 2%;
+   }
+
+   a {
+     color: $gold-font;
+   }
+
+   a:hover {
+     color: $hover-blue;
+   }
+
+   h1 {
+     margin-left: 5%;
+     font-family: 'Sail', cursive;
+     color: $gold-font;
+     float: left;
+   }
+
+   h1:hover {
+     color: $hover-blue;
+
+   }
+ }
+
+
+ //footer styles
+
+ footer{
+
+ }
