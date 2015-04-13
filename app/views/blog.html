@@ -1,5 +1,15 @@
 <div class="container">
 
-    <h1>Blog</h1>
+
+    <ul>
+        <li ng-repeat="b in blog" id="{{ b.objectId }}">
+
+                {{ b.title }} <br/>
+                {{ b.content }}<br/>
+                {{ b.createdAt }}
+
+        </li>
+    </ul>
+
 
 </div>

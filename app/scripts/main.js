@@ -8,7 +8,8 @@
                 'Content-Type': 'application/json'
             }
         })
-        .config( function ($routeProvider) {
+       .constant('PARSE_URI', 'https://api.parse.com/1/')
+       .config( function ($routeProvider) {
 
 
             $routeProvider.when('/', {
