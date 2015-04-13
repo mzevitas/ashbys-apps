@@ -1,6 +1,6 @@
 (function () {
 
-    angular.module('AshbysApps', ['ngRoute', 'ngCookies'])
+   var app = angular.module('AshbysApps', ['ngRoute', 'ngCookies'])
         .constant('PARSE_HEADERS', {
             headers: {
                 'X-Parse-Application-Id': 'IZ8NffJP8o20X4aDdTeFiTuGMpsHHmvjNeVxOLmv',
@@ -25,7 +25,7 @@
             });
             $routeProvider.when('/blog', {
                 templateUrl: 'views/blog.html',
-                controller: 'PageCtrl'
+                controller: 'BlogCtrl'
             });
             $routeProvider.when('/contact', {
                 templateUrl: 'views/contact.html',
@@ -35,8 +35,12 @@
 
         });
 
-    angular.controller('PageCtrl', function () {
-        console.log("Page Controller reporting for duty.");
+    app.controller('PageCtrl', function () {
+        //console.log("Page Controller here.");
+    });
+
+    app.controller('BlogCtrl', function (){
+        console.log("Blog controller here")
     });
 
 }());
