@@ -8,7 +8,7 @@
                 'Content-Type': 'application/json'
             }
         })
-       .constant('PARSE_URI', 'https://api.parse.com/1/')
+       .constant('https://api.parse.com/1/')
        .config( function ($routeProvider) {
 
 
@@ -32,6 +32,10 @@
                 templateUrl: 'views/contact.html',
                 controller: 'PageCtrl'
             });
+           $routeProvider.when('/single_view/:rid', {
+               templateUrl: 'views/single_view.html',
+               controller: 'BlogCtrl'
+           });
 
 
         });

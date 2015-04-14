@@ -1,13 +1,13 @@
 (function (){
 
     angular.module('AshbysApps')
-        .factory('BlogFactory', ['$http', '$location', '$cookieStore', 'PARSE_URI', 'PARSE_HEADERS',
-            function ($http, $location, $cookieStore, PARSE_HEADERS, PARSE_URI) {
+        .factory('BlogFactory', ['$http', '$location', '$cookieStore',  'PARSE_HEADERS',
+            function ($http, $location, $cookieStore, PARSE_HEADERS) {
 
 
 
                 var getBlog = function () {
-                    return $http.get(PARSE_URI + 'classes/blog', PARSE_HEADERS);
+                    return $http.get('https://api.parse.com/1/classes/blog/', PARSE_HEADERS);
                 };
 
 

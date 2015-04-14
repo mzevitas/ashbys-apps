@@ -2,13 +2,17 @@
 
 
     <ul>
-        <li ng-repeat="b in blog" id="{{ b.objectId }}">
-
-                {{ b.title }} <br/>
-                {{ b.content }}<br/>
-                {{ b.createdAt }}
-
+        <a href="#/viewPost/{{ objectId }}">
+        <li ng-repeat="b in blogs" id="{{ b.objectId }}">
+            {{ b.title }}
+            <br/>
+            {{ b.content }}
+            <br/>
+            {{ b.createdAt }}
+            <br/>
+            {{ b.photo }}
         </li>
+        </a>
     </ul>
 
 
