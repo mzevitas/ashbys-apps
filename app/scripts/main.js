@@ -34,24 +34,25 @@
             });
            $routeProvider.when('/viewPost/:rid', {
                templateUrl: 'views/single_view.html',
-               controller: 'BlogCtrl'
+               controller: 'SingleCtrl'
            });
 
 
         });
 
     app.controller('PageCtrl', function () {
-        //console.log("Page Controller here.");
+        console.log("Page Controller here.");
     });
 
-    app.controller('BlogCtrl', function (){
-        console.log("Blog controller here")
+    app.controller('BlogCtrl', function () {
+        console.log("Blog controller here.");
     });
 
-    app.controller('SingleCtrl', function (){
-        console.log("Single controller here")
-
+    app.controller('SingleCtrl', function () {
+        console.log("Single controller here.");
 
     });
 
 }());
+
+

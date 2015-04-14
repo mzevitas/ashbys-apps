@@ -5,11 +5,10 @@
             function ($scope, BlogFactory, $routeParams) {
 
                 BlogFactory.getSingle($routeParams).success( function(data){
-                    $scope.b = data;
+                    $scope.blogs = data.results;
 
                 });
 
-                //RecipeFactory.imageFile.getUrl();
 
             }
         ]);
