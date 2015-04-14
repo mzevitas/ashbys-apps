@@ -1,6 +1,6 @@
 (function () {
 
-   var app = angular.module('AshbysApps', ['ngRoute', 'ngCookies'])
+   var app = angular.module('AshbysApps', ['ngRoute', 'ngCookies', 'angularSimpleSlider'])
         .constant('PARSE_HEADERS', {
             headers: {
                 'X-Parse-Application-Id': 'IZ8NffJP8o20X4aDdTeFiTuGMpsHHmvjNeVxOLmv',
@@ -52,6 +52,10 @@
         console.log("Single controller here.");
 
     });
+
+
+    var imgSlider = new SimpleSlider( document.getElementById('myslider') );
+
 
 }());
 
