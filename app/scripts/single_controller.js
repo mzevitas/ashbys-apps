@@ -1,10 +1,10 @@
 (function (){
 
     angular.module('AshbysApps')
-        .controller('singlePage', ['$scope', 'BlogFactory', '$routeParams',
+        .controller('SingleCtrl', ['$scope', 'BlogFactory', '$routeParams',
             function ($scope, BlogFactory, $routeParams) {
 
-                BlogFactory.getSingle($routeParams.rid).success( function(data){
+                BlogFactory.getSingle($routeParams).success( function(data){
                     $scope.b = data;
 
                 });

@@ -32,7 +32,7 @@
                 templateUrl: 'views/contact.html',
                 controller: 'PageCtrl'
             });
-           $routeProvider.when('/single_view/:rid', {
+           $routeProvider.when('/viewPost/:rid', {
                templateUrl: 'views/single_view.html',
                controller: 'BlogCtrl'
            });
@@ -46,6 +46,12 @@
 
     app.controller('BlogCtrl', function (){
         console.log("Blog controller here")
+    });
+
+    app.controller('SingleCtrl', function (){
+        console.log("Single controller here")
+
+
     });
 
 }());

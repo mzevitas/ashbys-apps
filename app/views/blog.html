@@ -1,19 +1,20 @@
 <div class="container">
 
 
-    <ul>
-        <a href="#/viewPost/{{ objectId }}">
+<ul>
         <li ng-repeat="b in blogs" id="{{ b.objectId }}">
-            {{ b.title }}
+            <a href="#/viewPost/{{ b.objectId }}">
+
+            {{ b.title}}
             <br/>
             {{ b.content }}
             <br/>
             {{ b.createdAt }}
             <br/>
-            {{ b.photo }}
+            </a>
+
         </li>
-        </a>
-    </ul>
 
 
+</ul>
 </div>
