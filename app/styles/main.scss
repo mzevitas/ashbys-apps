@@ -109,10 +109,10 @@
        font-family: 'Sail', cursive;
        color: $gold-font;
        font-weight: 700;
+      font-size: 1.5em;
 
-     }
 
-
+    }
 
     .medium-4.columns.a{
       height: auto;
@@ -133,6 +133,184 @@
 }
 
 
+//about styles
+
+ .about {
+   margin: 0 auto;
+   text-align: center;
+
+   h1{
+     text-align: center;
+     font-family: 'Sail', cursive;
+     color: $gold-font;
+     font-weight: 700;
+   }
+
+   h4 {
+     text-align: center;
+     font-family: 'Sail', cursive;
+     color: $gold-font;
+     font-weight: 700;
+     font-size: 1.2em;
+   }
+
+   img {
+     width: 250px;
+   }
+
+   p {
+     text-align: center;
+     font-size: 1.2em;
+     font-family: 'Sail', cursive;
+     color: $gold-font;
+     clear: both;
+     background-color: hsla(157,30%,73%,0.2);
+     border-radius: 20px;
+     padding: 3%;
+     width: 95%;
+     margin: 0 auto;
+
+
+
+   }
+
+   .medium-4.columns.a {
+     height: auto;
+
+
+   }
+   .medium-4.columns.b {
+     height: auto;
+     margin-bottom: 15px;
+     border-radius: 15px;
+
+
+     img {
+       border: 7px solid transparent;
+
+       -moz-border-image: -moz-linear-gradient(top left, hsla(350,56%,92%,1) 0%, #d38284 100%);
+       -webkit-border-image: -webkit-linear-gradient(top left, hsla(350,56%,92%,1) 0%, #d38284 100%);
+       border-image: linear-gradient(to bottom right, hsla(350,56%,92%,1) 0%, #d38284 100%);
+
+       border-image-slice: 1;
+     }
+   }
+   .medium-4.columns.c {
+     height: auto;
+
+   }
+
+ }
+
+
+//portfolio Styles
+.portfolio {
+  margin: 0 auto;
+  text-align: center;
+
+  h1 {
+    text-align: center;
+    font-family: 'Sail', cursive;
+    color: $gold-font;
+    font-weight: 700;
+  }
+  h2 {
+    text-align: center;
+    font-family: 'Sail', cursive;
+    color: $gold-font;
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+
+  img {
+width: 150px;
+  }
+
+
+  .medium-4.columns.a {
+     height: auto;
+
+   }
+  .medium-4.columns.b {
+    height: auto;
+  }
+  .medium-4.columns.c {
+    height: auto;
+  }
+  .medium-4.columns.d {
+    height: auto;
+
+  }
+  .medium-4.columns.e {
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .medium-4.columns.f {
+    height: auto;
+  }
+
+}
+
+// Contact Styles
+
+ .contact {
+
+   h1{
+     text-align: center;
+     font-family: 'Sail', cursive;
+     color: $gold-font;
+     font-weight: 700;
+   }
+
+
+
+   .medium-6.columns.a {
+     height: auto;
+
+     iframe {
+       float: left;
+       margin-left: 15%;
+       margin-bottom: 20px;
+     }
+
+
+   }
+   .medium-6.columns.b {
+     height: auto;
+     text-align: center;
+
+     .contactbox {
+       background-color: hsla(157,30%,73%,0.2);
+       width: 67%;
+       margin: 0 auto;
+       border-radius: 45px;
+       //height: 232px;
+       padding: 2%;
+     }
+
+     h4 {
+       text-align: center;
+       font-family: 'Sail', cursive;
+       color: $gold-font;
+       font-weight: 700;
+       font-size: 1.3em;
+     }
+     h3 {
+       text-align: center;
+       font-family: 'Sail', cursive;
+       color: $gold-font;
+       font-weight: 700;
+       font-size: 1.9em;
+     }
+     a {
+       color: $gold-font
+     }
+
+     a:hover {
+       color: $hover-blue
+     }
+   }
+ }
 
  //footer styles
 
@@ -142,6 +320,7 @@
    text-align: center;
    font-family: 'Sail', cursive;
    padding: 9px;
+   clear: both;
 
 
    .contactinfo{
