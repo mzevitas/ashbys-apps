@@ -1,8 +1,8 @@
 (function (){
 
     angular.module('AshbysApps')
-        .factory('BlogFactory', ['$http', '$location', '$cookieStore',  'PARSE_HEADERS',
-            function ($http, $location, $cookieStore, PARSE_HEADERS) {
+        .factory('BlogFactory', ['$http', '$location', '$cookieStore', '$routeParams','PARSE_HEADERS',
+            function ($http, $location, $cookieStore, $routeParams, PARSE_HEADERS) {
 
 
 

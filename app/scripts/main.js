@@ -34,7 +34,7 @@
             });
            $routeProvider.when('/viewPost/:rid', {
                templateUrl: 'views/single_view.html',
-               controller: 'SingleCtrl'
+               controller: 'BlogCtrl'
            });
 
 
