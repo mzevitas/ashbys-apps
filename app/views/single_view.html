@@ -1,19 +1,14 @@
-<div class="container" ng-controller="SingleCtrl">
+<div class="container">
 
-    <ul>
-        <li  id="{{ b.objectId }}">
 
+    <div id="{{ b.objectId }}" ng-controller="SingleCtrl">
                 {{ b.title}}
                 <br/>
                 {{ b.content }}
                 <br/>
-                {{ createdAt }}
+                {{ b.createdAt }}
                 <br/>
-                {{ photo }}
+                {{ b.photo }}
 
-
-        </li>
-
-
-    </ul>
+</div>
    </div>

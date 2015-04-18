@@ -5,7 +5,7 @@
             function ($scope, BlogFactory, $routeParams) {
 
                 BlogFactory.getSingle($routeParams).success( function(data){
-                    $scope.blogs = data.results;
+                    $scope.blogs = data;
 
                 });
 
@@ -13,3 +13,5 @@
             }
         ]);
 }());
+
+
