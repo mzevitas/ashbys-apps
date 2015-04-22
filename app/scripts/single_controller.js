@@ -1,17 +1,15 @@
 (function (){
 
     angular.module('AshbysApps')
-        .controller('SingleCtrl', ['$scope', 'BlogFactory', '$routeParams',
-            function ($scope, BlogFactory, $routeParams) {
+        .controller('SingleCtrl', ['$scope', '$http', 'BlogFactory', '$routeParams',
+            function ($scope, $http, BlogFactory, $routeParams) {
 
-                BlogFactory.getSingle($routeParams).success( function(data){
-                    $scope.blogs = data;
+                BlogFactory.getSingle($routeParams).success(function (data) {
+                    $scope.blog = data.results;
 
                 });
 
-
-            }
-        ]);
+            }]);
 }());
 
 
