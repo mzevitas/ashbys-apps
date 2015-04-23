@@ -28,14 +28,15 @@
                 templateUrl: 'views/blog.html',
                 controller: 'BlogCtrl'
             });
+            $routeProvider.when('/blogPost/:id', {
+               templateUrl: 'views/single_view.html',
+               controller: 'SingleCtrl'
+           });
             $routeProvider.when('/contact', {
                 templateUrl: 'views/contact.html',
                 controller: 'PageCtrl'
             });
-           $routeProvider.when('/blogPost/:id', {
-               templateUrl: 'views/single_view.html',
-               controller: 'SingleCtrl'
-           });
+           
 
 
         });

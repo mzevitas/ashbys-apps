@@ -1,9 +1,9 @@
-<!--<div class="container">-->
+<div class="container" ng-controller="BlogCtrl">
 
-    <!--ng-controller="BlogCtrl"-->
+    
 <ul>
         <li ng-repeat="b in blogs" id="{{ b.objectId }}">
-            <a href="#/blogPost/{{ b.objectId }}">
+            <a href="#/blogPost/ {{ b.objectId }}">
 
             {{ b.title}}
             <br/>
@@ -17,4 +17,4 @@
 
 
 </ul>
-<!--</div>-->
+</div>
