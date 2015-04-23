@@ -251,6 +251,52 @@ width: 150px;
 
 }
 
+
+
+
+// BLog STyles
+
+ li {
+   text-decoration: none;
+   list-style-type: none;
+   width: 90%;
+   text-align: center;
+   margin: 0 auto;
+
+
+
+     a:hover {
+       background-color: $gold-font;
+     }
+
+
+
+
+   h1 {
+     text-align: center;
+     font-family: 'Sail', cursive;
+     color: $gold-font;
+     font-weight: 700;
+
+   }
+
+   p{
+     text-align: center;
+     font-size: 1.2em;
+     font-family: 'Sail', cursive;
+     color: $gold-font;
+   }
+
+   h6 {
+     font-family: 'Sail', cursive;
+     color: $gold-font;
+
+   }
+
+
+ }
+
+
 // Contact Styles
 
  .contact {

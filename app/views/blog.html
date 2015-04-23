@@ -3,14 +3,15 @@
     
 <ul>
         <li ng-repeat="b in blogs" id="{{ b.objectId }}">
-            <a href="#/blogPost/ {{ b.objectId }}">
+            <a href="#/blogPost/{{ b.objectId }}">
 
-            {{ b.title}}
+         <h1> {{ b.title}}  </h1>
+                <br/>
+           <p> {{ b.content }} </p>
             <br/>
-            {{ b.content }}
+           <h6> {{ b.createdAt }}</h6>
             <br/>
-            {{ b.createdAt }}
-            <br/>
+                <hr/>
             </a>
 
         </li>
