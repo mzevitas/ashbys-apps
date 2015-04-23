@@ -11,8 +11,8 @@
                 };
 
 
-                var getSingle = function (single) {
-                    return $http.get('https://api.parse.com/1/classes/blog/' + single, PARSE_HEADERS);
+                var getSingle = function (id) {
+                    return $http.get('https://api.parse.com/1/classes/blog/' + id, PARSE_HEADERS);
                 };
 
 

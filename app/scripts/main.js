@@ -32,7 +32,7 @@
                 templateUrl: 'views/contact.html',
                 controller: 'PageCtrl'
             });
-           $routeProvider.when('/blog/:single', {
+           $routeProvider.when('/blogPost/:id', {
                templateUrl: 'views/single_view.html',
                controller: 'SingleCtrl'
            });
@@ -44,14 +44,7 @@
         console.log("Page Controller here.");
     });
 
-    //app.controller('BlogCtrl', function () {
-    //    console.log("Blog controller here.");
-    //});
-    //
-    //app.controller('SingleCtrl', function () {
-    //    console.log("Single controller here.");
-    //
-    //});
+
 
 
     var imgSlider = new SimpleSlider( document.getElementById('myslider') );

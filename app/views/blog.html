@@ -2,14 +2,14 @@
 
     <!--ng-controller="BlogCtrl"-->
 <ul>
-        <li ng-repeat="blog in blogs" id="{{ blog.objectId }}">
-            <a href="#/blog/{{blog.objectId}}">
+        <li ng-repeat="b in blogs" id="{{ b.objectId }}">
+            <a href="#/blogPost/{{ b.objectId }}">
 
-            {{ blog.title}}
+            {{ b.title}}
             <br/>
-            {{ blog.content }}
+            {{ b.content }}
             <br/>
-            {{ blog.createdAt }}
+            {{ b.createdAt }}
             <br/>
             </a>
 
