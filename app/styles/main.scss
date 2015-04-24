@@ -74,6 +74,18 @@
 
    }
  }
+//Mobile Nav
+
+ nav {
+   display: none;
+
+
+.nav li {
+
+  display: inline-block;
+}
+}
+
 
 
  //home
@@ -405,4 +417,47 @@ width: 150px;
 
      }
    }
+
+
+
+ @media screen and (max-width: 950px) {
+ .menu {
+   display: none;
+  }
+
+
+
+   nav {
+     display: block;
+   }
+
+   .nav {
+     display: none;
+     float: right;
+     font-size: 30px;
+     background-color: $header-color;
+     width: 100%;
+     text-align: center;
+     margin: 0 auto;
+
+   }
+
+   .nav-btn {
+      display: block;
+     cursor: pointer;
+
+   }
+
+   .btn-img{
+     margin-right: 15px;
+     margin-top: -5px;
+     width: 50px;
+   }
+
+   .nav-btn:before{
+   }
+
+
+ }
+
 

@@ -50,6 +50,16 @@
     var imgSlider = new SimpleSlider( document.getElementById('myslider') );
 
 
+
+
+
+
+
 }());
+
+
+
+
+
 
 
