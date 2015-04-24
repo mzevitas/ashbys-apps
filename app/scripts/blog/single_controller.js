@@ -10,7 +10,7 @@
 
                 });
 
-        console.log("hellosingle");
+        //console.log("hellosingle");
 
 
             }]);

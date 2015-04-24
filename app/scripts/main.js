@@ -41,7 +41,7 @@
         });
 
     app.controller('PageCtrl', function () {
-        console.log("Page Controller here.");
+        //console.log("Page Controller here.");
     });
 
 
