@@ -8,7 +8,6 @@
                 'Content-Type': 'application/json'
             }
         })
-       .constant('https://api.parse.com/1/')
        .config( function ($routeProvider) {
 
 
@@ -28,7 +27,7 @@
                 templateUrl: 'views/blog.html',
                 controller: 'BlogCtrl'
             });
-            $routeProvider.when('/blogPost/:id', {
+            $routeProvider.when('/blogPost/:rid', {
                templateUrl: 'views/single_view.html',
                controller: 'SingleCtrl'
            });
