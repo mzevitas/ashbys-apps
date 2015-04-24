@@ -1,14 +1,18 @@
 
-<ul>
+<ul class="singlepage">
     <li>
 
               <h1> {{ b.title}} </h1>
         <br/>
                <p> {{ b.content }} </p>
                 <br/>
-             <h6>   {{ b.createdAt }} </h6>
+        <h6>{{ b.createdAt | date:"fullDate"}}</h6>
                 <br/>
 
-</li>
+        <img src="{{ b.photo.url }}"/>
+
+        <h6> {{ b.author }}</h6>
+
+    </li>
     </ul>
 

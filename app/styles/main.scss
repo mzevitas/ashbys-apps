@@ -268,45 +268,99 @@ width: 150px;
 
 // BLog STyles
 
- li {
-   text-decoration: none;
-   list-style-type: none;
-   width: 90%;
-   text-align: center;
-   margin: 0 auto;
-
-
+ .blogpage {
+   li {
+     text-decoration: none;
+     list-style-type: none;
+     width: 90%;
+     text-align: center;
+     margin: 0 auto;
 
      a:hover {
-       background-color: $gold-font;
+       //background-color: $gold-font;
+     }
+
+     h1 {
+       text-align: center;
+       font-family: 'Sail', cursive;
+       color: $gold-font;
+       font-weight: 700;
+
+     }
+
+     p {
+       clear: both;
+       text-align: center;
+       font-size: 1.2em;
+       font-family: 'Sail', cursive;
+       color: $gold-font;
+       white-space: pre-wrap;
+       overflow: hidden;
+       text-overflow: ellipsis;
+       width: 70%;
+       height: 84px;
+       margin: 0 auto;
+     }
+
+     .readmore {
+       margin: 0 auto;
      }
 
 
+     h6 {
+       font-family: 'Sail', cursive;
+       color: $gold-font;
+       float: right;
 
+     }
+     h5 {
+       font-family: 'Sail', cursive;
+       color: $gold-font;
+       float: left;
 
-   h1 {
-     text-align: center;
-     font-family: 'Sail', cursive;
-     color: $gold-font;
-     font-weight: 700;
+     }
+
 
    }
-
-   p{
-     text-align: center;
-     font-size: 1.2em;
-     font-family: 'Sail', cursive;
-     color: $gold-font;
-   }
-
-   h6 {
-     font-family: 'Sail', cursive;
-     color: $gold-font;
-
-   }
-
-
  }
+
+ .singlepage {
+   li {
+     text-decoration: none;
+     list-style-type: none;
+     width: 90%;
+     text-align: center;
+     margin: 0 auto;
+
+     a:hover {
+       //background-color: $gold-font;
+     }
+
+     h1 {
+       text-align: center;
+       font-family: 'Sail', cursive;
+       color: $gold-font;
+       font-weight: 700;
+
+     }
+
+     p {
+       text-align: center;
+       font-size: 1.2em;
+       font-family: 'Sail', cursive;
+       color: $gold-font;
+     }
+
+     h6 {
+       font-family: 'Sail', cursive;
+       color: $gold-font;
+
+     }
+
+   }
+ }
+
+
 
 
 // Contact Styles
@@ -329,6 +383,8 @@ width: 150px;
        float: left;
        margin-left: 15%;
        margin-bottom: 20px;
+       height: 450px;
+       width: 450px;
      }
 
 
@@ -451,7 +507,9 @@ width: 150px;
    .btn-img{
      margin-right: 15px;
      margin-top: -5px;
-     width: 50px;
+     width: 35px;
+     height: 45px
+
    }
 
    .nav-btn:before{

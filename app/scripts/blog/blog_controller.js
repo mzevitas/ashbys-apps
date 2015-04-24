@@ -6,12 +6,14 @@
 
                 BlogFactory.getBlog().success( function (data) {
                     $scope.blogs = data.results;
+
                 });
 
 
 
 
-                //console.log("hello");
+
+    //console.log("hello");
 
 
 

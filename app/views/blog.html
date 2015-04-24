@@ -1,15 +1,22 @@
 
     
-<ul>
+<ul class="blogpage">
         <li ng-repeat="b in blogs" id="{{ b.objectId }}">
             <a href="#/blogPost/{{ b.objectId }}">
 
-         <h1> {{ b.title}}  </h1>
                 <br/>
-           <p> {{ b.content }} </p>
-            <br/>
-           <h6> {{ b.createdAt }}</h6>
-            <br/>
+                <h1> {{ b.title}}</h1>
+                <br/>
+                <img src="{{ b.photo.url }}"/>
+
+                <br/>
+                <h6>{{ b.createdAt |  date:"fullDate"}}</h6>
+                <h5> Author: {{ b.author }}</h5>
+                <br/>
+                <p> {{ b.content }}</p>
+                <br/>
+                <p class="readmore">Read More ...</p>
+                <br/>
                 <hr/>
             </a>
 
