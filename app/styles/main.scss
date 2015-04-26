@@ -109,6 +109,10 @@
     width: 30px;
   }
 
+  p {
+    color: $gold-font;
+  }
+
 
   .skills{
 
@@ -262,6 +266,11 @@
     position: absolute;
     top: 0;
     left: 0;
+    p{
+      width: 70%;
+      text-align: center;
+      margin: 0 auto;
+    }
   }
 
   /* front pane, placed above back */
@@ -298,6 +307,10 @@
 
   img {
 width: 150px;
+  }
+
+  p {
+    color: $gold-font;
   }
 
 
@@ -464,7 +477,7 @@ width: 150px;
    .medium-6.columns.a {
      height: auto;
 
-     iframe {
+     .map {
        float: left;
        margin-left: 15%;
        margin-bottom: 20px;
@@ -559,12 +572,28 @@ width: 150px;
      }
    }
 
+@media screen and (max-width: 1000px) {
+  .contact {
 
+    .medium-6.columns.a {
 
+      .map {
+        float: left;
+        margin-left: 15%;
+        margin-bottom: 20px;
+        height: 300px;
+        width: 300px;
+      }
+
+    }
+  }
+}
  @media screen and (max-width: 950px) {
  .menu {
    display: none;
   }
+
+
 
 
 
