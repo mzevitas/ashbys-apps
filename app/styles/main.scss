@@ -143,15 +143,37 @@
 
   }
 
+  .sliders {
+      //margin-left:40%;
+    margin: 0 auto;
+    text-align: center;
+    .iphone {
+
+      margin: 0 auto;
+      height: 690px;
+      width: 320px;
+      position: relative;
+    }
+
+    .picslide {
+      margin-top: -684px;
+      margin-bottom: 130px;
+      margin-left: 4px;
+
   simple-slider {
+
+    border-radius: 2px;
     margin: 0 auto;
   }
+    .fullscreen {
 
-  .fullscreen {
-    height: 450px;
-    width: 450px;
+      margin-top: 100px;
+      position: absolute;
+    }
   }
 }
+  }
+
 
 
 //about styles
@@ -247,6 +269,10 @@
   .flip-container, .front, .back {
     width: 350px;
     height: 250px;
+
+    img {
+      border-radius: 17px;
+    }
 
 
   }
