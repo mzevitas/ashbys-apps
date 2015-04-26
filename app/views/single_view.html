@@ -1,17 +1,17 @@
 
 <ul class="singlepage">
     <li>
-
-              <h1> {{ b.title}} </h1>
         <br/>
-               <p> {{ b.content }} </p>
-                <br/>
-        <h6>{{ b.createdAt | date:"fullDate"}}</h6>
-                <br/>
-
+        <h1> {{ b.title}}</h1>
+        <br/>
         <img src="{{ b.photo.url }}"/>
 
-        <h6> {{ b.author }}</h6>
+        <br/>
+        <h6>{{ b.createdAt |  date:"fullDate"}}</h6>
+        <h5> Author: {{ b.author }}</h5>
+        <br/>
+        <p> {{ b.content }}</p>
+        <br/>
 
     </li>
     </ul>

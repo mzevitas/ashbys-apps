@@ -82,7 +82,7 @@
 
 .nav li {
 
-  display: inline-block;
+  display: block;
 }
 }
 
@@ -216,9 +216,66 @@
 
 
 //portfolio Styles
+
+
+
 .portfolio {
   margin: 0 auto;
   text-align: center;
+
+  //flip Styles:
+
+  .flip-container {
+    perspective: 1000;
+    //clear: both;
+    margin: 0 auto;
+  }
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+  .flip-container, .front, .back {
+    width: 350px;
+    height: 250px;
+
+
+  }
+
+  /* flip speed goes here */
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+  }
+
+  /* hide back of pane during swap */
+  .front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* front pane, placed above back */
+  .front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+  }
+
+  /* back, initially hidden pane */
+  .back {
+    transform: rotateY(180deg);
+  }
+
+
+  //reg styles
+
+
+
 
   h1 {
     text-align: center;
@@ -248,6 +305,7 @@ width: 150px;
   }
   .medium-4.columns.c {
     height: auto;
+    //margin-right: 1px;
   }
   .medium-4.columns.d {
     height: auto;
@@ -345,20 +403,42 @@ width: 150px;
      }
 
      p {
+       clear: both;
        text-align: center;
        font-size: 1.2em;
        font-family: 'Sail', cursive;
        color: $gold-font;
+       //white-space: pre-wrap;
+       //overflow: hidden;
+       //text-overflow: ellipsis;
+       width: 90%;
+       //height: 84px;
+       margin: 0 auto;
      }
+
+     .readmore {
+       margin: 0 auto;
+     }
+
 
      h6 {
        font-family: 'Sail', cursive;
        color: $gold-font;
+       float: right;
+
+     }
+     h5 {
+       font-family: 'Sail', cursive;
+       color: $gold-font;
+       float: left;
 
      }
 
+
    }
  }
+
+
 
 
 
@@ -460,7 +540,7 @@ width: 150px;
    .socialimg {
 
      img{
-       width: 2.2%;
+       width: 26px;
        transition: 1s ease;
      }
 
@@ -498,8 +578,10 @@ width: 150px;
 
    }
 
+
+
    .nav-btn {
-      display: block;
+     display: block;
      cursor: pointer;
 
    }
@@ -508,11 +590,35 @@ width: 150px;
      margin-right: 15px;
      margin-top: -5px;
      width: 35px;
-     height: 45px
+     height: 45px;
 
    }
 
    .nav-btn:before{
+
+   }
+
+
+
+ }
+
+
+ @media screen and (max-width: 900px) {
+   //.medium-4.column{
+   //  margin-left: 20%;
+   //}
+   //
+   //.medium-4.columns.c {
+   //  height: auto;
+   //  margin-right: 1px;
+   //}
+
+ }
+
+ @media screen and (max-width: 720px) {
+
+   .atp {
+     display: none;
    }
 
 
