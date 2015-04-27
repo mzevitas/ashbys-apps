@@ -1,4 +1,4 @@
-//(function () {
+(function () {
 
     angular.module('AshbysApps')
         .controller('BlogCtrl', ['$scope', '$http', 'BlogFactory',
@@ -21,4 +21,4 @@
 
             }]);
 
-//}());
+}());

@@ -1,4 +1,4 @@
-//(function () {
+(function () {
 
    var app = angular.module('AshbysApps', ['ngRoute', 'ngCookies', 'angularSimpleSlider'])
         .constant('PARSE_HEADERS', {
@@ -56,7 +56,7 @@
 
 
 
-//}());
+}());
 
 
 
