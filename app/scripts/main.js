@@ -47,7 +47,7 @@
 
 
 
-    var imgSlider = new SimpleSlider( document.getElementById('myslider') );
+    //var imgSlider = new SimpleSlider( document.getElementById('myslider') );
 
 
 
