@@ -1,4 +1,4 @@
-//(function () {
+(function () {
 
    var app = angular.module('AshbysApps', ['ngRoute', 'ngCookies', 'angularSimpleSlider'])
         .constant('PARSE_HEADERS', {
@@ -56,7 +56,7 @@
 
 
 
-//}());
+}());
 
 
 
@@ -65,7 +65,7 @@
 
 
 
-//(function (){
+(function (){
 
     angular.module('AshbysApps')
         .factory('BlogFactory', ['$http', '$location', '$cookieStore', '$routeParams','PARSE_HEADERS',
@@ -91,8 +91,8 @@
 
             }
         ]);
-//}());
-//(function () {
+}());
+(function () {
 
     angular.module('AshbysApps')
         .controller('BlogCtrl', ['$scope', '$http', 'BlogFactory',
@@ -115,8 +115,8 @@
 
             }]);
 
-//}());
-//(function (){
+}());
+(function (){
 
     angular.module('AshbysApps')
         .controller('SingleCtrl', ['$scope', '$http', 'BlogFactory', '$routeParams',
@@ -132,7 +132,7 @@
 
 
             }]);
-//}());
+}());
 
 
 
