@@ -1,4 +1,4 @@
-(function (){
+//(function (){
 
     angular.module('AshbysApps')
         .factory('BlogFactory', ['$http', '$location', '$cookieStore', '$routeParams','PARSE_HEADERS',
@@ -24,4 +24,4 @@
 
             }
         ]);
-}());
+//}());

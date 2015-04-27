@@ -1,4 +1,4 @@
-(function (){
+//(function (){
 
     angular.module('AshbysApps')
         .controller('SingleCtrl', ['$scope', '$http', 'BlogFactory', '$routeParams',
@@ -14,7 +14,7 @@
 
 
             }]);
-}());
+//}());
 
 
 
