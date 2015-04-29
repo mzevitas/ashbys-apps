@@ -43,9 +43,28 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest('dist/fonts'));
 });
 
+
+
 gulp.task('extras', function () {
   return gulp.src(['app/*.*', '!app/*.html'], {dot: true})
     .pipe(gulp.dest('dist'));
+});
+
+// Add around line 46ish
+
+gulp.task('templates', function () {
+  return gulp.src('app/templates/**/*')
+      .pipe(gulp.dest('dist/templates'));
+});
+
+gulp.task('views', function () {
+  return gulp.src('app/views/**/*')
+      .pipe(gulp.dest('dist/views'));
+});
+
+// Update this to add the new tasks
+gulp.task('build', ['html', 'images', 'fonts', 'extras', 'templates', 'views'], function () { // templates and views added
+  return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
 gulp.task('clean', function (cb) {
